@@ -419,7 +419,7 @@ Project structure from [Cookiecutter Data Science](https://drivendata.github.io/
 
 [Fernando Pozo](https://orcid.org/0000-0001-7688-6045) ([@fpozoca](https://twitter.com/fpozoca) – fpozoc@gmx.com)
 
-Contributors: Laura Martinez-Gomez, Thomas A. Walsh, Tomas Di Domenico, Jose Manuel Rodriguez, Jesus Vazquez, Federico Abascal, Michael L Tress
+Contributors: Daniel Cerdán, Laura Martinez-Gomez, Thomas A. Walsh, Tomas Di Domenico, Jose Manuel Rodriguez, Jesus Vazquez, Federico Abascal, Michael L Tress
 
 # Release History
 
