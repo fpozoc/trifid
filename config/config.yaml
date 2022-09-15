@@ -1,0 +1,492 @@
+genomes:
+  GRCh38:
+    gtest:
+      annotation: data/source/GRCh38/gtest/gencode.v27.annotation.gtf.gz
+      appris_data: data/source/GRCh38/gtest/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/gtest/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCh38/gtest/AllExons.hsap38.v27.PhyloCSF.txt.gz
+      qpfam: data/source/GRCh38/gtest/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/gtest/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/gtest/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/gtest/appris_data.transl.fa.gz
+    rs110:
+      annotation: '-'
+      appris_data: data/source/GRCh38/rs110/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/rs110/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/GRCh38/rs110/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/rs110/qsplice.emtab2836.tsv.gz
+      reference: '-'
+      sequences: data/source/GRCh38/rs110/appris_data.transl.fa.gz
+    e108:
+      annotation: data/source/GRCh38/e108/Homo_sapiens.GRCh38.108.gtf.gz
+      appris_data: data/source/GRCh38/e108/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/e108/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/GRCh38/e108/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/e108/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/e108/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/e108/appris_data.transl.fa.gz
+    g41:
+      annotation: data/source/GRCh38/g41/gencode.v41.annotation.gtf.gz
+      appris_data: data/source/GRCh38/g41/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/g41/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCh38/g40/AllExons.hsap38.v40.PhyloCSF.txt.gz
+      qpfam: data/source/GRCh38/g41/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/g41/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/g41/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/g41/appris_data.transl.fa.gz
+    g40:
+      annotation: data/source/GRCh38/g40/gencode.v40.annotation.gtf.gz
+      appris_data: data/source/GRCh38/g40/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/g40/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCh38/g40/AllExons.hsap38.v40.PhyloCSF.txt.gz
+      qpfam: data/source/GRCh38/g40/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/g40/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/g40/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/g40/appris_data.transl.fa.gz
+    e107:
+      annotation: data/source/GRCh38/e107/Homo_sapiens.GRCh38.107.gtf.gz
+      appris_data: data/source/GRCh38/e107/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/e107/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/GRCh38/e107/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/e107/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/e107/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/e107/appris_data.transl.fa.gz
+    g39:
+      annotation: data/source/GRCh38/g39/gencode.v39.annotation.gtf.gz
+      appris_data: data/source/GRCh38/g39/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/g39/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCh38/g39/AllExons.hsap38.v39.PhyloCSF.txt.gz
+      qpfam: data/source/GRCh38/g39/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/g39/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/g39/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/g39/appris_data.transl.fa.gz
+    e106:
+      annotation: data/source/GRCh38/e106/Homo_sapiens.GRCh38.106.gtf.gz
+      appris_data: data/source/GRCh38/e106/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/e106/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/GRCh38/e106/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/e106/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/e106/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/e106/appris_data.transl.fa.gz
+    g38:
+      annotation: data/source/GRCh38/g38/gencode.v38.annotation.gtf.gz
+      appris_data: data/source/GRCh38/g38/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/g38/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCh38/g38/AllExons.hsap38.v38.PhyloCSF.txt.gz
+      qpfam: data/source/GRCh38/g38/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/g38/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/g38/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/g38/appris_data.transl.fa.gz
+    g37:
+      annotation: data/source/GRCh38/g37/gencode.v37.annotation.gtf.gz
+      appris_data: data/source/GRCh38/g37/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/g37/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCh38/g37/AllExons.hsap38.v37.PhyloCSF.txt.gz
+      qpfam: data/source/GRCh38/g37/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/g37/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/g37/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/g37/appris_data.transl.fa.gz
+    g36:
+      annotation: data/source/GRCh38/g36/gencode.v36.annotation.gtf.gz
+      appris_data: data/source/GRCh38/g36/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/g36/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCh38/g36/AllExons.hsap38.v36.PhyloCSF.txt.gz
+      qpfam: data/source/GRCh38/g36/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/g36/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/g36/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/g36/appris_data.transl.fa.gz
+    g35:
+      annotation: data/source/GRCh38/g35/gencode.v35.annotation.gtf.gz
+      appris_data: data/source/GRCh38/g35/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/g35/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCh38/g35/AllExons.hsap38.v35.PhyloCSF.txt.gz
+      qpfam: data/source/GRCh38/g35/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/g35/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/g35/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/g35/appris_data.transl.fa.gz
+    g34:
+      annotation: data/source/GRCh38/g34/gencode.v34.annotation.gtf.gz
+      appris_data: data/source/GRCh38/g34/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/g34/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCh38/g34/AllExons.hsap38.v34.PhyloCSF.txt.gz
+      qpfam: data/source/GRCh38/g34/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/g34/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/g34/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/g34/appris_data.transl.fa.gz
+    g33:
+      annotation: data/source/GRCh38/g33/gencode.v33.annotation.gtf.gz
+      appris_data: data/source/GRCh38/g33/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/g33/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCh38/g33/AllExons.hsap38.v33.PhyloCSF.txt.gz
+      qpfam: data/source/GRCh38/g33/qpfam.tsv.gzv
+      qsplice: data/source/GRCh38/g33/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/g33/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/g33/appris_data.transl.fa.gz
+    g27:
+      annotation: data/source/GRCh38/g27/gencode.v27.annotation.gtf.gz
+      appris_data: data/source/GRCh38/g27/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/g27/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCh38/g27/AllExons.hsap38.v27.PhyloCSF.txt.gz
+      qpfam: data/source/GRCh38/g27/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/g27/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh38/g27/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh38/g27/appris_data.transl.fa.gz
+    rs109:
+      annotation: '-'
+      appris_data: data/source/GRCh38/rs109/appris_data.appris.txt
+      corsair_alt: data/source/GRCh38/rs109/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/GRCh38/rs109/qpfam.tsv.gz
+      qsplice: data/source/GRCh38/rs109/qsplice.emtab2836.tsv.gz
+      reference: '-'
+      sequences: data/source/GRCh38/rs109/appris_data.transl.fa.gz
+  GRCh37:
+    g19:
+      annotation: data/source/GRCh37/g19/gencode.v19.annotation.gtf.gz
+      appris_data: data/source/GRCh37/g19/appris_data.appris.txt
+      corsair_alt: data/source/GRCh37/g19/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/GRCh37/g19/qpfam.tsv.gz
+      qsplice: data/source/GRCh37/g19/qsplice.emtab2836.tsv.gz
+      reference: data/source/GRCh37/g19/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCh37/g19/appris_data.transl.fa.gz
+    rs105:
+      annotation: '-'
+      appris_data: data/source/GRCh37/rs105/appris_data.appris.txt
+      corsair_alt: data/source/GRCh37/rs105/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/GRCh37/rs105/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/GRCh37/rs105/appris_data.transl.fa.gz
+  GRCm39:
+    g30:
+      annotation: data/source/GRCm39/g30/gencode.vM30.annotation.gtf.gz
+      appris_data: data/source/GRCm39/g30/appris_data.appris.txt
+      corsair_alt: data/source/GRCm39/g30/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCm39/g29/AllExons.mmus39.v29.PhyloCSF.txt.gz
+      qpfam: data/source/GRCm39/g30/qpfam.tsv.gz
+      qsplice: '-'
+      reference: data/source/GRCm39/g30/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCm39/g30/appris_data.transl.fa.gz
+    e108:
+      annotation: data/source/GRCm39/e108/Mus_musculus.GRCm39.108.gtf.gz
+      appris_data: data/source/GRCm39/e108/appris_data.appris.txt
+      corsair_alt: data/source/GRCm39/e108/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/GRCm39/e108/qpfam.tsv.gz
+      qsplice: '-'
+      reference: data/source/GRCm39/e108/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCm39/e108/appris_data.transl.fa.gz
+    e107:
+      annotation: data/source/GRCm39/e107/Mus_musculus.GRCm39.107.gtf.gz
+      appris_data: data/source/GRCm39/e107/appris_data.appris.txt
+      corsair_alt: data/source/GRCm39/e107/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/GRCm39/e107/qpfam.tsv.gz
+      qsplice: '-'
+      reference: data/source/GRCm39/e107/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCm39/e107/appris_data.transl.fa.gz
+    g29:
+      annotation: data/source/GRCm39/g29/gencode.vM29.annotation.gtf.gz
+      appris_data: data/source/GRCm39/g29/appris_data.appris.txt
+      corsair_alt: data/source/GRCm39/g29/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCm39/g29/AllExons.mmus39.v29.PhyloCSF.txt.gz
+      qpfam: data/source/GRCm39/g29/qpfam.tsv.gz
+      qsplice: '-'
+      reference: data/source/GRCm39/g29/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCm39/g29/appris_data.transl.fa.gz
+    g28:
+      annotation: data/source/GRCm39/g28/gencode.vM28.annotation.gtf.gz
+      appris_data: data/source/GRCm39/g28/appris_data.appris.txt
+      corsair_alt: data/source/GRCm39/g28/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCm39/g28/AllExons.mmus39.v28.PhyloCSF.txt.gz
+      qpfam: data/source/GRCm39/g28/qpfam.tsv.gz
+      qsplice: '-'
+      reference: data/source/GRCm39/g28/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCm39/g28/appris_data.transl.fa.gz
+    e106:
+      annotation: data/source/GRCm39/e106/Mus_musculus.GRCm39.106.gtf.gz
+      appris_data: data/source/GRCm39/e106/appris_data.appris.txt
+      corsair_alt: data/source/GRCm39/e106/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCm39/e106/AllExons.mmus39.v27.PhyloCSF.txt.gz
+      qpfam: data/source/GRCm39/e106/qpfam.tsv.gz
+      qsplice: '-'
+      reference: data/source/GRCm39/e106/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCm39/e106/appris_data.transl.fa.gz
+    g27:
+      annotation: data/source/GRCm39/g27/gencode.vM27.annotation.gtf.gz
+      appris_data: data/source/GRCm39/g27/appris_data.appris.txt
+      corsair_alt: data/source/GRCm39/g27/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCm39/g27/AllExons.mmus39.v27.PhyloCSF.txt.gz
+      qpfam: data/source/GRCm39/g27/qpfam.tsv.gz
+      qsplice: '-'
+      reference: data/source/GRCm39/g27/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCm39/g27/appris_data.transl.fa.gz
+    g26:
+      annotation: data/source/GRCm39/g26/gencode.vM26.annotation.gtf.gz
+      appris_data: data/source/GRCm39/g26/appris_data.appris.txt
+      corsair_alt: data/source/GRCm39/g26/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCm39/g26/AllExons.mmus39.v26.PhyloCSF.txt.gz
+      qpfam: data/source/GRCm39/g26/qpfam.tsv.gz
+      qsplice: '-'
+      reference: data/source/GRCm39/g26/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCm39/g26/appris_data.transl.fa.gz
+  GRCm38: 
+    g25:
+      annotation: data/source/GRCm38/g25/gencode.vM25.annotation.gtf.gz
+      appris_data: data/source/GRCm38/g25/appris_data.appris.txt
+      corsair_alt: data/source/GRCm38/g25/appris_method.corsair_alt.txt
+      phylocsf: data/source/GRCm38/g25/AllExons.mmus10.v25.PhyloCSF.txt.gz
+      qpfam: data/source/GRCm38/g25/qpfam.tsv.gz
+      qsplice: '-'
+      reference: data/source/GRCm38/g25/gencode.qduplications.tsv.gz
+      sequences: data/source/GRCm38/g25/appris_data.transl.fa.gz
+  Rnor_6.0: 
+    e105:
+      annotation: '-'
+      appris_data: data/source/Rnor_6.0/e105/appris_data.appris.txt
+      corsair_alt: data/source/Rnor_6.0/e105/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/Rnor_6.0/e105/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/Rnor_6.0/e105/appris_data.transl.fa.gz
+    e104:
+      annotation: '-'
+      appris_data: data/source/Rnor_6.0/e104/appris_data.appris.txt
+      corsair_alt: data/source/Rnor_6.0/e104/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/Rnor_6.0/e104/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/Rnor_6.0/e104/appris_data.transl.fa.gz
+    e100:
+      annotation: '-'
+      appris_data: data/source/Rnor_6.0/e100/appris_data.appris.txt
+      corsair_alt: data/source/Rnor_6.0/e100/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/Rnor_6.0/e100/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/Rnor_6.0/e100/appris_data.transl.fa.gz
+  GRCz11: 
+    e104:
+      annotation: '-'
+      appris_data: data/source/GRCz11/e104/appris_data.appris.txt
+      corsair_alt: data/source/GRCz11/e104/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/GRCz11/e104/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/GRCz11/e104/appris_data.transl.fa.gz
+    e98:
+      annotation: '-'
+      appris_data: data/source/GRCz11/e98/appris_data.appris.txt
+      corsair_alt: data/source/GRCz11/e98/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/GRCz11/e98/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/GRCz11/e98/appris_data.transl.fa.gz
+    rs105:
+      annotation: '-'
+      appris_data: data/source/GRCz11/rs105/appris_data.appris.txt
+      corsair_alt: '-'
+      phylocsf: '-'
+      qpfam: data/source/GRCz11/rs105/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/GRCz11/rs105/appris_data.transl.fa.gz
+  Sscrofa11.1: 
+    e108:
+      annotation: '-'
+      appris_data: data/source/Sscrofa11.1/e108/appris_data.appris.txt
+      corsair_alt: data/source/Sscrofa11.1/e108/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/Sscrofa11.1/e108/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/Sscrofa11.1/e108/appris_data.transl.fa.gz
+    e107:
+      annotation: '-'
+      appris_data: data/source/Sscrofa11.1/e107/appris_data.appris.txt
+      corsair_alt: data/source/Sscrofa11.1/e107/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/Sscrofa11.1/e107/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/Sscrofa11.1/e107/appris_data.transl.fa.gz
+    e104:
+      annotation: '-'
+      appris_data: data/source/Sscrofa11.1/e104/appris_data.appris.txt
+      corsair_alt: data/source/Sscrofa11.1/e104/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/Sscrofa11.1/e104/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/Sscrofa11.1/e104/appris_data.transl.fa.gz
+    e98:
+      annotation: '-'
+      appris_data: data/source/Sscrofa11.1/e98/appris_data.appris.txt
+      corsair_alt: '-'
+      phylocsf: '-'
+      qpfam: data/source/Sscrofa11.1/e98/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/Sscrofa11.1/e98/appris_data.transl.fa.gz
+  Pan_tro_3.0: 
+    e104:
+      annotation: '-'
+      appris_data: data/source/Pan_tro_3.0/e104/appris_data.appris.txt
+      corsair_alt: data/source/Pan_tro_3.0/e104/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/Pan_tro_3.0/e104/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/Pan_tro_3.0/e104/appris_data.transl.fa.gz
+    e91:
+      annotation: '-'
+      appris_data: data/source/Pan_tro_3.0/e91/appris_data.appris.txt
+      corsair_alt: '-'
+      phylocsf: '-'
+      qpfam: data/source/Pan_tro_3.0/e91/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/Pan_tro_3.0/e91/appris_data.transl.fa.gz
+    rs104:
+      annotation: '-'
+      appris_data: data/source/Pan_tro_3.0/rs104/appris_data.appris.txt
+      corsair_alt: '-'
+      phylocsf: '-'
+      qpfam: data/source/Pan_tro_3.0/rs104/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/Pan_tro_3.0/rs104/appris_data.transl.fa.gz
+  ARS-UCD1.2:
+    e104:
+      annotation: '-'
+      appris_data: data/source/ARS-UCD1.2/e104/appris_data.appris.txt
+      corsair_alt: data/source/ARS-UCD1.2/e104/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/ARS-UCD1.2/e104/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/ARS-UCD1.2/e104/appris_data.transl.fa.gz 
+    e96:
+      annotation: '-'
+      appris_data: data/source/ARS-UCD1.2/e96/appris_data.appris.txt
+      corsair_alt: '-'
+      phylocsf: '-'
+      qpfam: data/source/ARS-UCD1.2/e96/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/ARS-UCD1.2/e96/appris_data.transl.fa.gz
+  BDGP6: 
+    e104:
+      annotation: '-'
+      appris_data: data/source/BDGP6/e104/appris_data.appris.txt
+      corsair_alt: data/source/BDGP6/e104/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/BDGP6/e104/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/BDGP6/e104/appris_data.transl.fa.gz
+    e100:
+      annotation: '-'
+      appris_data: data/source/BDGP6/e100/appris_data.appris.txt
+      corsair_alt: '-'
+      phylocsf: '-'
+      qpfam: data/source/BDGP6/e100/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/BDGP6/e100/appris_data.transl.fa.gz
+  WBcel235: 
+    e108:
+      annotation: '-'
+      appris_data: data/source/WBcel235/e108/appris_data.appris.txt
+      corsair_alt: data/source/WBcel235/e108/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/WBcel235/e108/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/WBcel235/e108/appris_data.transl.fa.gz
+    e106:
+      annotation: '-'
+      appris_data: data/source/WBcel235/e106/appris_data.appris.txt
+      corsair_alt: data/source/WBcel235/e106/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/WBcel235/e106/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/WBcel235/e106/appris_data.transl.fa.gz
+    e104:
+      annotation: '-'
+      appris_data: data/source/WBcel235/e104/appris_data.appris.txt
+      corsair_alt: data/source/WBcel235/e104/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/WBcel235/e104/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/WBcel235/e104/appris_data.transl.fa.gz
+    e101:
+      annotation: '-'
+      appris_data: data/source/WBcel235/e101/appris_data.appris.txt
+      corsair_alt: '-'
+      phylocsf: '-'
+      qpfam: data/source/WBcel235/e101/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/WBcel235/e101/appris_data.transl.fa.gz
+  bGalGal1.mat.broiler.GRCg7b: 
+    e108:
+      annotation: '-'
+      appris_data: data/source/bGalGal1.mat.broiler.GRCg7b/e108/appris_data.appris.txt
+      corsair_alt: data/source/bGalGal1.mat.broiler.GRCg7b/e108/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/bGalGal1.mat.broiler.GRCg7b/e108/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/bGalGal1.mat.broiler.GRCg7b/e108/appris_data.transl.fa.gz
+  GRCg6a: 
+    e107:
+      annotation: '-'
+      appris_data: data/source/GRCg6a/e107/appris_data.appris.txt
+      corsair_alt: data/source/GRCg6a/e107/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/GRCg6a/e107/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/GRCg6a/e107/appris_data.transl.fa.gz
+    e104:
+      annotation: '-'
+      appris_data: data/source/GRCg6a/e104/appris_data.appris.txt
+      corsair_alt: data/source/GRCg6a/e104/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/GRCg6a/e104/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/GRCg6a/e104/appris_data.transl.fa.gz
+    e95:
+      annotation: '-'
+      appris_data: data/source/GRCg6a/e95/appris_data.appris.txt
+      corsair_alt: '-'
+      phylocsf: '-'
+      qpfam: data/source/GRCg6a/e95/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/GRCg6a/e95/appris_data.transl.fa.gz
+  Mmul_10: 
+    e105:
+      annotation: '-'
+      appris_data: data/source/Mmul_10/e105/appris_data.appris.txt
+      corsair_alt: data/source/Mmul_10/e105/appris_method.corsair_alt.txt
+      phylocsf: '-'
+      qpfam: data/source/Mmul_10/e105/qpfam.tsv.gz
+      qsplice: '-'
+      reference: '-'
+      sequences: data/source/Mmul_10/e105/appris_data.transl.fa.gz

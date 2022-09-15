@@ -1,0 +1,514 @@
+# feature: name used in dataset.
+# name: long name.
+# category: category to merge features for the same group.
+# description: feature description.
+# species: species we have this feature info. The label `human` represents human exclusive features, 
+#          GRCh38;GRCm38 represents features present in human and mouse annotations and `cross-species` 
+#          shows that we have cross-species info (further than human and mouse).
+# ** We rescaled (min-max normalization) several features to capture better the differences between 
+# alternative isoforms of the same gene. These normalizations allowed us to quantify the local effect 
+# of splicing on the predictive features and in some cases added insights that would have been hard to 
+# detect with non-normalized scores. Normalization formula is present in Supplementary Material **
+---
+-
+    feature: gene_id
+    name: Gene ID
+    category: Identifier
+    description: Ensembl gene Stable ID
+    source: https://www.ensembl.org/info/genome/stable_ids/index.html
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: gene_name
+    name: Gene Name
+    category: Identifier
+    description: HGNC symbol
+    source: https://www.genenames.org/
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: transcript_id
+    name: Transcript ID
+    category: Identifier
+    description: Ensembl transcript Stable ID
+    source: https://www.ensembl.org/info/genome/stable_ids/index.html
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: translation_id
+    name: Translation ID
+    category: Identifier
+    description: Ensembl protein Stable ID
+    source: https://www.ensembl.org/info/genome/stable_ids/index.html
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: flags
+    name: Flags
+    category: Identifier
+    description: Ensembl biotype
+    source: https://www.ensembl.org/info/genome/genebuild/biotypes.html
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: ccdsid
+    name: CCDS ID
+    category: Identifier
+    description: Consensus CDS protein set (https://www.ensembl.org/info/genome/genebuild/ccds.html)
+    source: https://www.ncbi.nlm.nih.gov/projects/CCDS/CcdsBrowse.cgi
+    support: GRCh38;GRCm38;Rnor_6.0
+    refseq: y
+    uniprot: y
+-
+    feature: appris
+    name: APPRIS tag
+    category: Identifier
+    description: APPRIS is a system to annotate alternatively spliced transcripts based on a range of computational methods. It provides value to the annotations of the human, mouse, zebrafish, rat, and pig genomes
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: ann_type
+    name: Annotation Type
+    category: Identifier
+    description: Duplication or fragment label
+    source: https://gitlab.com/bu_cnio/trifid#63-fragment-labelling
+    support: GRCh38;GRCm38
+    refseq: y
+    uniprot: y
+# -
+    # feature: sequence
+    # name: Sequence
+    # category: Identifier
+    # description: Protein sequence
+    # source: ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_27/gencode.v27.pc_translations.fa.gz
+    # support: cross-species
+-
+    feature: basic
+    name: Basic label
+    category: Annotation
+    description: Simplified, high-quality subset of the GENCODE transcript annotations that will be useful to the majority
+    source: https://www.gencodegenes.org/pages/faq.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: CCDS
+    name: CCDS label
+    category: Annotation
+    description: CCDS label presence
+    source: https://www.ncbi.nlm.nih.gov/projects/CCDS/CcdsBrowse.cgi
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: corsair
+    name: CORSAIR
+    category: Evolution
+    description: Conservation against vertebrates. It represents the number of vertebrate species that have an isoform that aligns to the human isoform over the whole sequence and without gaps (human scores just 0.5)
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: corsair_alt
+    name: Alt-CORSAIR
+    category: Evolution
+    description: Conservation against vertebrates. It shows the oldest specie that have an isoform that aligns to the human isoform over the whole sequence and without gaps (bilateria is the oldest achieved)
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: n
+-
+    feature: crash_m
+    name: CRASH-m
+    category: Structure
+    description: Reliability score for signal mitochondrial signal sequences
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: crash_p
+    name: CRASH-p
+    category: Structure
+    description: Simplified, high-quality subset of the GENCODE transcript annotations that will be useful to the majority
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: firestar
+    name: firestar
+    category: Structure
+    description: Absolute number of functional residues detected
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: length
+    name: Length
+    category: Annotation
+    description: Number of protein residues
+    source: ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_27/gencode.v27.pc_translations.fa.gz
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: length_delta_score
+    name: Length delta score
+    category: Splicing
+    description: Score normalized by length score of length delta (difference between isoform and the longest of the gene)
+    source: https://gitlab.com/bu_cnio/trifid
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: level_1
+    name: Level 1
+    category: Annotation
+    description: Verified loci
+    source: https://www.gencodegenes.org/pages/faq.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: level_2
+    name: Level 2
+    category: Annotation
+    description: Havana manual annotation and Ensembl annotation where it is identical to Havana
+    source: https://www.gencodegenes.org/pages/faq.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: level_3
+    name: Level 3
+    category: Annotation
+    description: Automated annotation
+    source: https://www.gencodegenes.org/pages/faq.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: matador3d
+    name: Matador3d
+    category: Structure
+    description: Score related to the number of exons that map to structure
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: nonsense_mediated_decay
+    name: NMD
+    category: Annotation
+    description: A transcript with a premature stop codon considered likely to be subjected to targeted degradation
+    source: https://www.ensembl.org/info/genome/genebuild/biotypes.html
+    support: GRCh38;GRCm38;Rnor_6.0;GRCz11
+    refseq: n
+    uniprot: n
+-
+    feature: norm_corsair_alt
+    name: Alt-CORSAIR (n)
+    category: Evolution
+    description: Alt-CORSAIR normalized per gene
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: n
+-
+    feature: norm_corsair
+    name: CORSAIR (n)
+    category: Evolution
+    description: CORSAIR normalized per gene
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: norm_crash_m
+    name: CRASH-m (n)
+    category: Structure
+    description: CRASH-m normalized per gene
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: norm_crash_p
+    name: CRASH-p (n)
+    category: Structure
+    description: CRASH-p normalized per gene
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: norm_firestar
+    name: firestar (n)
+    category: Structure
+    description: Firestar normalized
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: norm_Gain_residues_pfam
+    name: Pfam residues gained (n)
+    category: Splicing
+    description: Pfam residues gained after AS event (normalized)
+    source: https://gitlab.com/bu_cnio/trifid#62-pfam-effects
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: norm_Lost_residues_pfam
+    name: Pfam residues lost (n)
+    category: Splicing
+    description: Pfam residues lost after AS event (normalized)
+    source: https://gitlab.com/bu_cnio/trifid#62-pfam-effects
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: norm_matador3d
+    name: Matador3d (n)
+    category: Structure
+    description: Matador3d normalized per gene
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: norm_PhyloCSF_Psi
+    name: PhyloCSF score PSI (n)
+    category: Evolution
+    description: PhyloCSF_Psi normalized per gene
+    source: https://data.broadinstitute.org/compbio1/PhyloCSFtracks/trackHub/hub.DOC.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: norm_RelBranchLength
+    name: Min branch length ratio (n)
+    category: Evolution
+    description: RelBranchLength normalized per gene
+    source: https://data.broadinstitute.org/compbio1/PhyloCSFtracks/trackHub/hub.DOC.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: norm_RNA2sj_cds
+    name: RNA junction (n)
+    category: Expression
+    description: RNA2sj_cds normalized per gene
+    source: https://gitlab.com/bu_cnio/trifid#61-qsplice
+    support: GRCh38
+    refseq: y
+    uniprot: n
+-
+    feature: norm_ScorePerCodon
+    name: Min score per codon (n)
+    category: Evolution
+    description: ScorePerCodon normalized per gene
+    source: https://data.broadinstitute.org/compbio1/PhyloCSFtracks/trackHub/hub.DOC.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: norm_spade
+    name: Spade (n)
+    category: Structure
+    description: SPADE normalized per gene
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: norm_spade_loss
+    name: SPADE
+    category: Structure
+    description: score_loss normalized per gene
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: norm_thump
+    name: THUMP (n)
+    category: Structure
+    description: THUMP normalized per gene
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: perc_Damaged_State
+    name: Damaged Pfam domains
+    category: Splicing
+    description: Percentage of Pfam domains damaged after an AS event
+    source: https://gitlab.com/bu_cnio/trifid#62-pfam-effects
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: perc_Lost_State
+    name: Lost Pfam domains
+    category: Splicing
+    description: Percentage of Pfam domains lost after an AS event
+    source: https://gitlab.com/bu_cnio/trifid#62-pfam-effects
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: pfam_domains_impact_score
+    name: Pfam domains impact score
+    category: Splicing
+    description: Percentage of Pfam domains intacted after an AS event
+    source: https://gitlab.com/bu_cnio/trifid#62-pfam-effects
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: pfam_score
+    name: Pfam score
+    category: Structure
+    description: Percentage number of residues belonging to a Pfam domain that were lost or gained after an AS event (normalized)
+    source: https://gitlab.com/bu_cnio/trifid#62-pfam-effects
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: PhyloCSF_Psi
+    name: Min PhyloCSF score PSI
+    category: Evolution
+    description: Length-adjusted version of the log-likelihood ratio PhyloCSF score
+    source: https://data.broadinstitute.org/compbio1/PhyloCSFtracks/trackHub/hub.DOC.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: RelBranchLength
+    name: Min branch length ratio
+    category: Evolution
+    description: Lowest exon based score per isoform showing the relative branch length of the species in the local alignment of the region
+    source: https://data.broadinstitute.org/compbio1/PhyloCSFtracks/trackHub/hub.DOC.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: RNA2sj_cds
+    name: RNA junction
+    category: Expression
+    description: Lowest number of reads spanning the splice junction region in an isoform divided by the average of junction-spanning reads in the CDS regions
+    source: https://gitlab.com/bu_cnio/trifid#61-qsplice
+    support: GRCh38
+    refseq: y
+    uniprot: n
+-
+    feature: ScorePerCodon
+    name: Min score per codon
+    category: Evolution
+    description: PhyloCSF score per codon
+    source: https://data.broadinstitute.org/compbio1/PhyloCSFtracks/trackHub/hub.DOC.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: spade
+    name: SPADE
+    category: Structure
+    description: Identifies the functional domains present in a transcript and detects those domains that are damaged (not whole). The number represents the sum of bitscores in Pfam alignment
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: spade_loss
+    name: SPADE
+    category: Structure
+    description: Highest bit score per gene minus the bitscore per isoform
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: StartEnd_NF
+    name: Start/End not found label
+    category: Annotation
+    description: 5' Start or 3' end not found if the coding/mRNA start/end region could not be confirmed
+    source: https://www.gencodegenes.org/pages/tags.html
+    support: GRCh38
+    refseq: n
+    uniprot: n
+-
+    feature: thump
+    name: THUMP
+    category: Structure
+    description: Number of transmembrane helices detected
+    source: http://appris-tools.org/#/help/methods
+    support: cross-species
+    refseq: y
+    uniprot: y
+-
+    feature: tsl_1
+    name: TSL 1
+    category: Annotation
+    description: All splice junctions of the transcript are supported by at least one non-suspect mRNA
+    source: https://ensembl.org/info/genome/genebuild/transcript_quality_tags.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: tsl_2
+    name: TSL 2
+    category: Annotation
+    description: The best supporting mRNA is flagged as suspect or the support is from multiple ESTs
+    source: https://ensembl.org/info/genome/genebuild/transcript_quality_tags.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: tsl_3
+    name: TSL 3
+    category: Annotation
+    description: The only mRNA support is from a single EST
+    source: https://ensembl.org/info/genome/genebuild/transcript_quality_tags.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: tsl_4
+    name: TSL 4
+    category: Annotation
+    description: The best supporting EST is flagged as suspect
+    source: https://ensembl.org/info/genome/genebuild/transcript_quality_tags.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: tsl_5
+    name: TSL 5
+    category: Annotation
+    description: No single transcript mRNA supports the model structure
+    source: https://ensembl.org/info/genome/genebuild/transcript_quality_tags.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
+-
+    feature: tsl_6
+    name: TSL 6
+    category: Annotation
+    description: The transcript was not analyzed on mRNA and EST support
+    source: https://ensembl.org/info/genome/genebuild/transcript_quality_tags.html
+    support: GRCh38;GRCm38
+    refseq: n
+    uniprot: n
