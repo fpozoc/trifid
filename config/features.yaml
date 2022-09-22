@@ -78,7 +78,7 @@
     name: Annotation Type
     category: Identifier
     description: Duplication or fragment label
-    source: https://gitlab.com/bu_cnio/trifid#63-fragment-labelling
+    source: https://gitlab.com/fpozoc/trifid#63-fragment-labelling
     support: GRCh38;GRCm38
     refseq: y
     uniprot: y
@@ -166,7 +166,7 @@
     name: Length delta score
     category: Splicing
     description: Score normalized by length score of length delta (difference between isoform and the longest of the gene)
-    source: https://gitlab.com/bu_cnio/trifid
+    source: https://gitlab.com/fpozoc/trifid
     support: cross-species
     refseq: y
     uniprot: y
@@ -265,7 +265,7 @@
     name: Pfam residues gained (n)
     category: Splicing
     description: Pfam residues gained after AS event (normalized)
-    source: https://gitlab.com/bu_cnio/trifid#62-pfam-effects
+    source: https://gitlab.com/fpozoc/trifid#62-pfam-effects
     support: cross-species
     refseq: y
     uniprot: y
@@ -274,7 +274,7 @@
     name: Pfam residues lost (n)
     category: Splicing
     description: Pfam residues lost after AS event (normalized)
-    source: https://gitlab.com/bu_cnio/trifid#62-pfam-effects
+    source: https://gitlab.com/fpozoc/trifid#62-pfam-effects
     support: cross-species
     refseq: y
     uniprot: y
@@ -310,7 +310,7 @@
     name: RNA junction (n)
     category: Expression
     description: RNA2sj_cds normalized per gene
-    source: https://gitlab.com/bu_cnio/trifid#61-qsplice
+    source: https://gitlab.com/fpozoc/trifid#61-qsplice
     support: GRCh38
     refseq: y
     uniprot: n
@@ -355,7 +355,7 @@
     name: Damaged Pfam domains
     category: Splicing
     description: Percentage of Pfam domains damaged after an AS event
-    source: https://gitlab.com/bu_cnio/trifid#62-pfam-effects
+    source: https://gitlab.com/fpozoc/trifid#62-pfam-effects
     support: cross-species
     refseq: y
     uniprot: y
@@ -364,7 +364,7 @@
     name: Lost Pfam domains
     category: Splicing
     description: Percentage of Pfam domains lost after an AS event
-    source: https://gitlab.com/bu_cnio/trifid#62-pfam-effects
+    source: https://gitlab.com/fpozoc/trifid#62-pfam-effects
     support: cross-species
     refseq: y
     uniprot: y
@@ -373,7 +373,7 @@
     name: Pfam domains impact score
     category: Splicing
     description: Percentage of Pfam domains intacted after an AS event
-    source: https://gitlab.com/bu_cnio/trifid#62-pfam-effects
+    source: https://gitlab.com/fpozoc/trifid#62-pfam-effects
     support: cross-species
     refseq: y
     uniprot: y
@@ -382,7 +382,7 @@
     name: Pfam score
     category: Structure
     description: Percentage number of residues belonging to a Pfam domain that were lost or gained after an AS event (normalized)
-    source: https://gitlab.com/bu_cnio/trifid#62-pfam-effects
+    source: https://gitlab.com/fpozoc/trifid#62-pfam-effects
     support: cross-species
     refseq: y
     uniprot: y
@@ -409,7 +409,7 @@
     name: RNA junction
     category: Expression
     description: Lowest number of reads spanning the splice junction region in an isoform divided by the average of junction-spanning reads in the CDS regions
-    source: https://gitlab.com/bu_cnio/trifid#61-qsplice
+    source: https://gitlab.com/fpozoc/trifid#61-qsplice
     support: GRCh38
     refseq: y
     uniprot: n

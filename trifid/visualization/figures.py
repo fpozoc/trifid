@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """ trifid/visualization/figures.py
-https://gitlab.com/bu_cnio/trifid/-/blob/master/trifid/models/utils.py
+https://gitlab.com/fpozoc/trifid/-/blob/master/trifid/models/utils.py
 
 TRIFID useful figures.
 

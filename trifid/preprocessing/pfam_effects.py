@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """trifid/preprocessing/pfam_effects.py
-https://gitlab.com/bu_cnio/trifid/-/blob/master/trifid/preprocessing/pfam_effects.py
 
 Quantifying Pfam effects over reference isoform of every protein-coding gene for 
 the entire genome

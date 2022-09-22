@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """ trifid/models/train_model.py
-https://gitlab.com/bu_cnio/trifid/-/blob/master/trifid/models/train.py
 
 Training the TRIFID model.
 

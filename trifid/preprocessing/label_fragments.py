@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """trifid/preprocessing/label_fragments.py
-https://gitlab.com/bu_cnio/trifid/-/blob/master/trifid/preprocessing/label_fragments.py
 
 Labelling genome isoforms in duplications, fragments, RT or NMD
 

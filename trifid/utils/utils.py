@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """ trifid/utils/utils.py
-https://gitlab.com/bu_cnio/trifid/-/blob/master/trifid/models/utils.py
 
 Helper Functions
 

@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """trifid/preprocessing/qsplice.py
-https://gitlab.com/bu_cnio/trifid/-/blob/master/trifid/preprocessing/qsplice.py
 
 Quantifying splice junctions coverage from data released by STAR and mapping it to genome positions.
 
