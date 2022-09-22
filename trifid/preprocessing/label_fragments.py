@@ -29,7 +29,7 @@ Classes and functions:
 
 from __future__ import absolute_import, division, print_function
 
-import argparse, os, sys, warnings
+import argparse, os, warnings
 
 import pandas as pd
 from gtfparse import read_gtf

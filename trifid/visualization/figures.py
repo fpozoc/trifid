@@ -22,13 +22,10 @@ Classes and functions:
 """
 from __future__ import absolute_import, division, print_function
 
-import os, sys, warnings
-
 import pandas as pd
 import numpy as np
 import altair as alt
 import matplotlib.pyplot as plt
-import seaborn as sns
 import shap
 from sklearn.model_selection import StratifiedKFold
 from sklearn.metrics import precision_recall_curve, auc, matthews_corrcoef
