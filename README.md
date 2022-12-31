@@ -29,6 +29,9 @@
 
 - [Introduction](#introduction)
 - [Installation instructions](#installation-instructions)
+  - [Package installation](#package-installation)
+  - [Package development](#package-development)
+    - [Update the dependencies](#update-the-dependencies)
 - [Model reproducibility](#model-reproducibility)
   - [Data sources](#data-sources)
   - [Preprocessing](#preprocessing)
@@ -49,6 +52,9 @@
 - [Author information](#author-information)
 - [Release History](#release-history)
 - [Contributing](#contributing)
+  - [Branching (internal collaboration)](#branching-internal-collaboration)
+    - [Quickstart tips](#quickstart-tips)
+  - [Forking (external collaboration)](#forking-external-collaboration)
 - [License](#license)
 
 # Introduction
@@ -61,6 +67,14 @@ Go back to the table of Contents presented above, [open an issue in this reposit
 
 # Installation instructions
 
+## Package installation
+
+```bash
+pip install git+https://github.com/fpozoc/trifid.git
+```
+
+## Package development
+
 Run the silent installation of Miniconda/Anaconda in case you don't have this software in your environment.
 
 ```sh
@@ -68,23 +82,40 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/miniconda3
 ```
 
-Once you have installed Miniconda/Anaconda, create a Python 3.7 environment.
+<details>
+<summary>Remember to install mamba!</summary>
+<pre><code>conda install -c conda-forge mamba
+</code></pre>
+</details>
+
+
+Once you have installed Miniconda/Anaconda with mamba, create a Python environment from `environment.yml`.
 
 ```sh
-conda create --name trifid python=3.7
+git clone git@github.com:fpozoc/trifid.git
+cd trifid
+mamba env create -f environment.yml
 conda activate trifid
+pre-commit install
 ```
 
-Clone this repository and install it inside your recently created Conda environment.
+Run the pre-commit/tests:
 
-```sh
-git clone https://github.com/fpozoc/trifid
-cd trifid
-pip install .
+```bash
+pre-commit run --all-files
+pytest -v
+```
 
+### Update the dependencies
+
+Re-install the project in edit mode:
+
+```bash
+pip install -e .[dev]
 # optional
 pip install .[extra] # to install the visualization dependencies
 pip install .[interactive] # to install the interactive dependencies
+
 ```
 
 # Model reproducibility
@@ -380,7 +411,11 @@ Project structure from [Cookiecutter Data Science](https://drivendata.github.io/
 ¦   +-- 01.tutorial.ipynb           <- Tutorial to run an end-to-end TRIFID simulation
 ¦   +-- 02.figures                  <- Useful figures generated
 ¦
-+-- setup.py                        <- Make this project pip installable with `pip install -e`
++-- .editorconfig                   <- Editor configuration file
++-- setup.py                        <- Make this project pip installable 
++-- setup.cfg                       <- Setup configuration file
++-- environment.yml                 <- The requirements file for reproducing the analysis environment
++-- pyproject.toml                  <- Project configuration file
 +-- trifid                          <- Source code for use in this project.
 ¦   +-- __init__.py                 <- Makes trifid a Python module
 ¦   ¦
@@ -427,6 +462,24 @@ Contributors: Daniel Cerdán, Laura Martinez-Gomez, Thomas A. Walsh, Tomas Di Do
 - TRIFID v2.0.0 release (Sep, 2022).
 
 # Contributing
+
+Instructions to contribute to this project:
+
+## Branching (internal collaboration)
+
+Read [CONTRIBUTING.md](https://github.com/fpozoc/trifid/blob/master/CONTRIBUTING.md)
+
+### Quickstart tips
+
+- Follow a development workflow structure:
+    1. Open an Issue describing your implementation.
+    2. Create a Branch called `issue-number_developer-name_problem` (e.g. `12_fernando_modify-docs`) (please don't commit directly to `master` branch). Commit from here.
+    3. Create a Pull Request to `main` or `develop` branch when code were ready.
+- Don't upload big files here (only tests/examples if needed). Instead, use Azure.
+- The `Makefile` contains some useful command line orders (e.g. `make check`). Check it.
+- Read the `CONTRIBUTING.md` if you are interest to contribute with this repository.
+
+## Forking (external collaboration)
 
 1. Fork it (<https://github.com/fpozoc/trifid>)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
