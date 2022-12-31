@@ -1,0 +1,19 @@
+name: trifid
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - pip
+  - pip:
+    - -e .[dev]
+    - biopython
+    - numpy
+    - pandas>=1
+    - scikit-learn
+    - joblib
+    - cython
+    - pyyaml
+    - gtfparse
+    - loguru
+    - muscle
