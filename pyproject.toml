@@ -1,0 +1,113 @@
+[build-system]
+requires = ["setuptools==59.5", "wheel", "setuptools_scm[toml]>=6.3.1"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+minversion = "6.2"
+addopts = "-ra"
+testpaths = ["tests"]
+pythonpath = [
+  "src"
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "raise NotImplementedError",
+    "raise NotImplementedError()",
+    "pragma: nocover",
+    "if __name__ == .__main__.:",
+]
+
+[tool.black]
+line-length = 120
+color = false
+exclude = '''
+/(
+    \.git
+    | \.hg
+    | \.mypy_cache
+    | \.tox
+    | \.venv
+    | _build
+    | buck-out
+    | build
+    | dist
+    | env
+    | venv
+)/
+'''
+
+[tool.mypy]
+files= ["src/**/*.py", "test/*.py"]
+python_version = "3.7"
+ignore_missing_imports = true
+no_implicit_optional = true
+strict_optional = true
+warn_return_any = true
+warn_no_return = true
+warn_unreachable = true
+pretty = true
+
+[tool.isort]
+profile = 'black'
+line_length = 120
+color_output = true
+
+[tool.pydocstyle]
+convention = 'google'
+# ignore all missing docs errors
+add-ignore = ['D100', 'D101', 'D102', 'D103', 'D104', 'D105', 'D106', 'D107']
+
+[tool.pylint]
+# extension-pkg-whitelist= [
+#     "numpy",
+#     "torch",
+#     "cv2",
+#     "pyodbc",
+#     "pydantic",
+#     "ciso8601",
+#     "netcdf4",
+#     "scipy"
+# ]
+
+[tool.pylint.FORMAT]
+max-line-length = 120
+max-module-lines = 1000
+
+[tool.pylint.MASTER]
+ignore = "tests"
+max-complexity = 15
+
+[tool.pylint.BASIC]
+argument-naming-style = 'snake_case'
+attr-naming-style = 'snake_case'
+class-naming-style = 'PascalCase'
+const-naming-style = 'UPPER_CASE'
+function-naming-style = 'snake_case'
+method-naming-style = 'snake_case'
+module-naming-style = 'snake_case'
+variable-naming-style = 'snake_case'
+
+[tool.pylint.DESIGN]
+# Maximum number of arguments for function / method.
+max-args = 5
+# Maximum number of statements in function / method body.
+max-statements = 50
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = '''
+    logging-fstring-interpolation,
+    fixme,
+    import-error,
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
+    too-many-instance-attributes,
+    too-few-public-methods,
+    wrong-import-order,
+    broad-except,
+'''
+
+[tool.pylint.REFACTORING]
+# Maximum number of nested blocks for function / method body
+max-nested-blocks = 3
