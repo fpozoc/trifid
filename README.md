@@ -218,12 +218,25 @@ For now, predictions and predictive features are available for the genome annota
 
 ## `TRIFID` predictions and predictive features
 
-|Genome assembly|Specie        |Database     |Release - Date|Predictive features|Predictions|
-|---------------|--------------|-------------|--------------|-------------------|-----------|
-|GRCh38         |_Homo sapiens_|GENCODE      |27 - 08.2017  |[file](https://drive.google.com/file/d/195kJJ0qVejg6LYxGvOhjKSWc695pfxGY/view?usp=sharing)           |[file](https://drive.google.com/file/d/1rRgZR-xyQahKensIZAXIPDQiF21rRgmE/view?usp=sharing)   |
-|GRCh38         |_Homo sapiens_|GENCODE      |35 - 08.2020  |[file](https://drive.google.com/file/d/1gJ7KdNVAbbTpc2Mpq13It1XGTQ8GhfqS/view?usp=sharing)           |[file](https://drive.google.com/file/d/1WL7vWroRYQ9OAJ76uwnV3SiaoRAwLQGA/view?usp=sharing)   |
-|GRCh38         |_Homo sapiens_|RefSeq - NCBI|109 - 02.2020 |[file](https://drive.google.com/file/d/1mlIlUIKaaKIimDyfmdhEQnIE4V0Wz_qz/view?usp=sharing)           |[file](https://drive.google.com/file/d/14pxPSvtK78uYoLiVl128vO4L6BOgpxsw/view?usp=sharing)   |
-|GRCm38         |_Mus musculus_|GENCODE      |25 - 11.2019  |[file](https://drive.google.com/file/d/1MwqfGg_QCF2UgKVIQzoGafOZZKTrqX7J/view?usp=sharing)           |[file](https://drive.google.com/file/d/1iq5gPboPVmaUjZjVUVdQ76zfdEKzJ_9w/view?usp=sharing)   |
+|**Genome assembly**|**Specie**|**Name**|**Model**|**Version**|**Database**|**Release - Date**|**Features - predictions**|
+|:----|:----|:----|:----|:----|:----|:----|:----|
+|GRCh38|Homo sapiens|Human|Human|v1|GENCODE|27 - 08.2017|[sharepoint](https://drive.google.com/drive/folders/1RcUgw62gXE1U2iqUHPWppaQvofP4PYuk)|
+|GRCh38|Homo sapiens|Human|Human|v2|GENCODE|42 - 04.2022|[sharepoint](https://drive.google.com/drive/folders/1l0gKtd_phJyvNuAEpuRqycOC_OMabtkv)|
+|GRCh38|Homo sapiens|Human|Human|v2|GENCODE|37 - 02.2021|[sharepoint](https://drive.google.com/drive/folders/18206rNxVX_V8x9Gao1WpdZ-1neh4rQMV)|
+|GRCh38|Homo sapiens|Human|RefSeq|v2|RefSeq - NCBI|110 - 02.2020|[sharepoint](https://drive.google.com/drive/folders/1LwNGWsB2dB6hXzF9nGZ1Wem4ECJV_313)|
+|GRCh37|Homo sapiens|Human|RefSeq|v2|RefSeq - NCBI|105 - 02.2020|[sharepoint](https://drive.google.com/drive/folders/1axo4UniwdNBpThxFPBVPs3Y0wxylP-L6)|
+|GRCh37|Homo sapiens|Human|Human|v2|GENCODE|19 - 12.2013|[sharepoint](https://drive.google.com/drive/folders/1qbzl4y4tGnuR8QD5DUb4psTNB5b6Fydu)|
+|GRCm39|Mus musculus|Mouse|Mouse|v2|GENCODE|31 - 04.2022|[sharepoint](https://drive.google.com/drive/folders/1VCj2dI3ua2rznrM481uTnl2XKzLCiErd)|
+|GRCm38|Mus musculus|Mouse|Mouse|v2|GENCODE|25 - 11.2019|[sharepoint](https://drive.google.com/drive/folders/1V3E9_Q0GmbozO5_D4BM0ZVUeXxzpu9ZN)|
+|mRatBN7.2|Rattus norvegicus|Rat|Vertebrates|v2|Ensembl|105 - 12.2021|[sharepoint](https://drive.google.com/drive/folders/1GdXK9BrmwfCpbgEoc9xUR79qryS0R7nw)|
+|GRCz11|Danio rerio|Zebrafish|Vertebrates|v2|Ensembl|104 - 05.2021|[sharepoint](https://drive.google.com/drive/folders/1su-8I_VqHqYOdKX_WjDA8lMjFnMuFICz)|
+|GRCg7b|Gallus gallus|Chicken|Vertebrates|v2|Ensembl|108 - 10.2022|[sharepoint](https://drive.google.com/drive/folders/1YCBAOebJTFnx65wWJcSaTwuCH5JYgRGF)|
+|Pan_tro_3.0|Pan troglodytes|Chimpanzee|Vertebrates|v2|Ensembl|104 - 05.2021|[sharepoint](https://drive.google.com/drive/folders/1psXzm8FsjQI6ce2yVWpOFCW7ib4IHp4B)|
+|Sscrofa11.1|Sus scrofa|Pig|Vertebrates|v2|Ensembl|108 - 10.2022|[sharepoint](https://drive.google.com/drive/folders/19vhMdcS57dsuRWyBK-myC_iEJBXV4YEE)|
+|ARS-UCD1.2|Bos taurus|Cow|Vertebrates|v2|Ensembl|104 - 05.2021|[sharepoint](https://drive.google.com/drive/folders/19ks-d7Feaja6igEv8zOujhRQ2xoNefGL)|
+|Mmul_10|Macaca mulatta|Macaque|Vertebrates|v2|Ensembl|105 - 12.2021|[sharepoint](https://drive.google.com/drive/folders/1bjBappCZRMeAemx51sb1DLXlzG1fd3j0)|
+|BDGP6|Drosophila melanogaster|Fruitfly|Invertebrates|v2|Ensembl - Flybase|107 - 07.2022|[sharepoint](https://drive.google.com/drive/folders/1BQ2Yob9CPJG32ZjuD_ST1-MJpsrjCXuV)|
+|WBcel235|Caenorhabditis elegans|Worm|Invertebrates|v2|Ensembl - Wormbase|108 - 10.2022|[sharepoint](https://drive.google.com/drive/folders/1u2BkNF2ho70GloJu7pdvEffbfjaa_euq)|
 
 ## Other useful links
 
